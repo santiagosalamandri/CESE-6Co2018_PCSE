@@ -1,0 +1,16 @@
+Firmware creado a partir del Framework Mongoose OS, el cual corre encima del SDK oficial de Espressif.
+Esta basado en otro producto del emprendimiento UrBIT, por lo cual hay codigo que no esta disponible.
+Se utilizaron los siguientes protocolos y perifericos:
+
+- I2C(para MPU 9250)
+- GPIO(para sensor de alarma y desahibilitador)
+- WiFi
+- Bluetooth(Para reconocer dispositivo cercano)
+- IPv4
+- TCP (sockets, para soporte de HTTP,MQTT y como servicio de busqueda en LAN)
+- UDP (sockets, para soporte de mDNS)
+- HTTP (envio de mensajes a traves de LAN)
+- MQTT  (envio de mensajes a traves de internet)
+- mDNS (para dominio local).
+
+Tambien se adapto la App mobile para la prueba en clases, cuyo codigo no esta disponible.

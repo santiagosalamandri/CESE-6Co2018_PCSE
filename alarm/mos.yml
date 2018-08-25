@@ -1,0 +1,42 @@
+author: urbit
+description: Alarm app
+version: 0.1
+
+libs_version: ${mos.version}
+modules_version: ${mos.version}
+mongoose_os_version: ${mos.version}
+
+tags:
+  - c
+sources:
+  - src
+includes:
+  - include
+
+filesystem:
+  - fs
+
+config_schema:
+ - ["i2c.enable", true]
+ - ["i2c.sda_gpio", 21]
+ - ["i2c.scl_gpio", 22]
+
+libs:
+  - origin: https://github.com/mongoose-os-libs/mqtt # <-- Add this!
+  - origin: https://github.com/mongoose-os-libs/ota-http-server
+  - origin: https://github.com/mongoose-os-libs/rpc-common
+  - origin: https://github.com/mongoose-os-libs/rpc-loopback
+  - origin: https://github.com/mongoose-os-libs/rpc-service-config
+  - origin: https://github.com/mongoose-os-libs/rpc-service-fs
+  - origin: https://github.com/mongoose-os-libs/rpc-uart
+  - origin: https://github.com/mongoose-os-libs/wifi
+  - origin: https://github.com/mongoose-os-libs/dns-sd
+  - origin: https://github.com/mongoose-os-libs/rpc-service-wifi
+  - origin: https://github.com/mongoose-os-libs/i2c
+  - origin: https://github.com/mongoose-os-libs/imu
+  - origin: https://github.com/mongoose-os-libs/bt-common
+
+cdefs:
+  MGOS_TASK_STACK_SIZE_BYTES: 16384
+
+manifest_version: 2017-05-18

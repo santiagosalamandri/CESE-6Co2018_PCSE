@@ -1,0 +1,115 @@
+{
+    "conf_acl": "*",
+    "debug": {
+        "factory_reset_gpio": -1,
+        "filter": "",
+        "level": 2,
+        "mbedtls_level": 0,
+        "mg_mgr_hexdump_file": "",
+        "stderr_topic": "urbit-0F2B4D/err",
+        "stderr_uart": 0,
+        "stdout_topic": "urbit-830150/log",
+        "stdout_uart": 0,
+        "udp_log_addr": "172.18.191.208:3000"
+    },
+    "device": {
+        "id": "urbit-830150",
+        "password": ""
+    },
+    "dns_sd": {
+        "enable": true,
+        "host_name": "urbit-830150",
+        "ttl": 3,
+        "txt": ""
+    },
+    "http": {
+        "auth_domain": "",
+        "auth_file": "",
+        "document_root": "/",
+        "enable": true,
+        "hidden_files": "",
+        "listen_addr": "80",
+        "ssl_ca_cert": "",
+        "ssl_cert": "",
+        "ssl_key": "",
+        "upload_acl": "*"
+    },
+    "mqtt": {
+        "clean_session": true,
+        "client_id": "urbit-830150",
+        "enable": true,
+        "keep_alive": 10,
+        "max_qos": 2,
+        "pass": "WaXXIvaBseCIoLE8LiByBCBWIwCZq84p",
+        "reconnect_timeout_max": 60,
+        "reconnect_timeout_min": 2,
+        "recv_mbuf_limit": 3072,
+        "server": "mqtt.server:1883",
+        "ssl_ca_cert": "",
+        "ssl_cert": "",
+        "ssl_cipher_suites": "",
+        "ssl_key": "",
+        "ssl_psk_identity": "",
+        "ssl_psk_key": "",
+        "user": "RNJsUc1wDSmIoPiP8qQHQZTRCpqZunOV",
+        "will_message": "{\"status\":-1}",
+        "will_topic": "urbit-830150/status"
+    },
+    "rpc": {
+        "acl_file": "acl.json",
+        "auth_domain": "urbit",
+        "auth_file": "auth.txt",
+        "default_out_channel_idle_close_timeout": 10,
+        "enable": true,
+        "max_frame_size": 4096,
+        "max_queue_length": 25,
+        "mqtt": {
+            "enable": false,
+            "topic": ""
+        }
+    },
+    "update": {
+        "commit_timeout": 0,
+        "enable_post": false,
+        "interval": 0,
+        "ssl_ca_file": "",
+        "ssl_client_cert_file": "",
+        "ssl_server_name": "",
+        "timeout": 300,
+        "url": ""
+    },
+    "urbit": {
+        "FullVersion": false,
+        "actualUsers": 0,
+        "configurado": false,
+        "maxUsers": 10,
+        "mqttInvitationSuffix": "/invitation/urbit-830150",
+        "mqttLwt": "urbit-830150/status",
+        "mqttPublishReponse": "urbit-830150/response",
+        "mqttSubscribeRequest": "urbit-830150/request",
+        "string_value": "urbit"
+    },
+    "wifi": {
+        "ap": {
+            "enable": false
+        },
+        "sta": {
+            "enable": true,
+            "ssid": "ssid",
+            "pass": "password"
+        }
+    },
+    "bt": {
+        "enable": true,
+        "dev_name": "urbit-830150",
+        "adv_enable": true,
+        "keep_enabled": true,
+        "scan_rsp_data_hex": "",
+        "allow_pairing": false,
+        "max_paired_devices": 10,
+        "gatts": {
+            "min_sec_level": 0,
+            "require_pairing": false
+        }
+    }
+}
